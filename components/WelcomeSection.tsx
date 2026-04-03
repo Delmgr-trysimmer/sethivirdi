@@ -4,7 +4,7 @@ import { FaCalendarAlt } from "react-icons/fa";
 
 const WelcomeSection = () => {
   return (
-    <section className="w-full bg-white py-16 md:py-24">
+    <section className="w-full bg-white py-10 md:py-16 ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1290px]">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-14">
           {/* Left Content */}
@@ -55,7 +55,7 @@ const WelcomeSection = () => {
               <Image
                 src="/images/megna-319-scaled-1.jpg"
                 alt="Dr. Megna Sethi and Dr. Amandeep Virdi"
-                width={300}
+                width={300} 
                 height={500}
                 className="rounded-[10px] block m-auto"
               />

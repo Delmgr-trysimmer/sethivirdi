@@ -36,8 +36,8 @@ const Navbar = () => {
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>('');
 
   return (
-    <header className="w-full bg-white text-[#0d0d0d] sticky top-0 z-50 shadow-sm">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-[1290px] py-3">
+    <header className="w-full bg-white text-[#0d0d0d] top-0 z-50 shadow-sm">
+      <div className="mx-auto px-4 sm:px-6 max-w-[1290px] py-3">
         <div className="flex items-center justify-between">
           
           {/* Logo */}
