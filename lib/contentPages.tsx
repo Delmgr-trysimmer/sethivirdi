@@ -45,11 +45,10 @@ export const blogPages: BlogPage[] = [
             description:
                 "Explore the basics of dental implants, their benefits, and what to expect from treatment with this educational blog from Sethi Virdi DDS.",
         },
-        title: "Dental Implant: Everything You Need to Know",
+        title: "",
         excerpt:
-            "Understand what dental implants are, why they are used, and how they can restore comfort, function, and confidence.",
+            "",
         coverImage: "/images/DENTAL-IMPLANT-EVERYTHING-YOU-NEED-TO-KNOW.jpg",
-        publishedAt: "March 12, 2026",
         bannerTitle: "Dental Implant: Everything You Need to Know",
         content: [
             {
@@ -73,43 +72,46 @@ export const blogPages: BlogPage[] = [
             {
                 type: "heading",
                 level: 2,
-                text: "Why Patients Choose Dental Implants",
+                text: "What are the dangers, difficulties, and issues associated with a dental implant?",
             },
             {
-                type: "list",
-                items: [
-                    "**Natural appearance:** Implants are designed to blend in with your smile and feel secure during daily activities.",
-                    "**Reliable support:** They can anchor a crown, bridge, or denture with strong long-term stability.",
-                    "**Jawbone preservation:** Implants help stimulate the bone, which can reduce the bone loss often seen after tooth loss.",
-                    "**Improved comfort:** Unlike removable options, implants do not shift the same way traditional dentures can.",
-                ],
+                type: "paragraph",
+                text: "There are always some dangers and potential issues with any surgery, whether for the patient or the success of a dental implant. To guarantee that a patient is healthy enough to undergo oral surgery and heal correctly, careful planning is required. Bleeding disorders, infections, allergies, underlying medical conditions, and drugs, like any other oral surgery procedure, require careful consideration before treatment. Fortunately, the success rate is relatively high, and failures are frequently caused by infection, dental implant fracture, overloading, damage to the surrounding area (nerves, blood vessels, teeth), the incorrect placing of the dental implant, or low bone quantity or quality. Again, careful preparation with a trained surgeon can assist in avoiding these issues. After the necessary healing time has passed, a second attempt to replace a failed dental implant can often be made.",
             },
             {
                 type: "heading",
                 level: 2,
-                text: "Who May Be a Candidate?",
+                text: "What is the price of a dental implant?",
             },
             {
                 type: "paragraph",
-                text: "Many adults with one or more missing teeth can be candidates for dental implants, but treatment planning always depends on factors like gum health, bone support, overall health, and oral hygiene habits. A detailed dental evaluation helps determine whether implants are the best choice and whether any preparatory treatment is needed first.",
+                text: "The price of a single dental implant varies based on where you live and who does the treatment. A single dental implant might cost anywhere between $3,000 and $4,500. This price includes the implant procedure, as well as all of the components and the implant crown.",
             },
             {
                 type: "heading",
                 level: 2,
-                text: "What to Expect During Treatment",
+                text: "Who are the dentists who specialize in dental implants?",
             },
             {
                 type: "paragraph",
-                text: "Dental implant treatment usually happens in stages. The process often includes an exam, digital imaging, treatment planning, implant placement, healing time for bone integration, and finally the placement of the restoration. Every case is different, so the timeline may vary depending on the number of implants and whether additional procedures are required.",
+                text: "Any licensed dentist can do implant surgery as long as it follows the standard of care and is in the patient's best interests. Dental doctors who routinely perform surgery within the jawbone are ideal for implant surgery because implants are surgically inserted in the jawbone.",
+            },
+            {
+                type: "paragraph",
+                text: "The implant crown, which the implant will support, will be placed when the implant has fully integrated into the jawbone. A regular dentist or a prosthodontist usually performs this procedure (a dental specialist focused on artificial tooth replacement).",
             },
             {
                 type: "heading",
                 level: 2,
-                text: "Long-Term Care",
+                text: "Conclusion",
             },
             {
                 type: "paragraph",
-                text: "Dental implants should be cared for just like natural teeth. Brushing, flossing, routine professional cleanings, and regular dental checkups all play an important role in keeping the implant site healthy and protecting your long-term result.",
+                text: "Without question, implant dentistry has increased the number of treatment choices available for replacing single and numerous lost teeth with long-term stability and contributing to better oral health.",
+            },
+            {
+                type: "paragraph",
+                text: "Dental implants have become a popular tooth replacement option because they are both conservative and predictable, with success rates approaching 98 percent.",
             },
         ],
     },
