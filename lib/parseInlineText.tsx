@@ -1,8 +1,8 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-const linkClassName = "text-[#82874F] font-bold hover:underline";
-const phoneLinkClassName = "text-[#1291da] font-bold hover:underline";
+const linkClassName = "text-[#1155cc] font-bold hover:underline";
+const phoneLinkClassName = "text-[#1155cc] font-bold hover:underline";
 const inlinePattern = /(\*\*([^*]+)\*\*|\[([^\]]+)\]\(([^)]+)\))/g;
 
 function isInternalLink(href: string) {

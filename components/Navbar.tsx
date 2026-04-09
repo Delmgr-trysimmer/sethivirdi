@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { blogPages } from '@/lib/contentPages';
+import { formatServiceSlug, services } from '@/lib/services';
 import {
   FaChevronDown,
   FaInstagram,
@@ -13,21 +15,39 @@ import {
   FaTimes,
 } from 'react-icons/fa';
 
-const navItems = [
+type NavItem = {
+  label: string;
+  href: string;
+  dropdown?: Array<{
+    label: string;
+    href: string;
+  }>;
+};
+
+const serviceDropdown = services.map((service) => ({
+  label: formatServiceSlug(service.slug),
+  href: `/${service.slug}`,
+}));
+
+const blogDropdown = blogPages.map((page) => ({
+  label: page.bannerTitle ?? page.title,
+  href: `/${page.slug}`,
+}));
+
+const navItems: NavItem[] = [
   { label: 'Home', href: '/' },
-  { label: 'Our Practice', href: '#' },
+  { label: 'Our Practice', href: '/our-practice' },
   { 
     label: 'About', 
-    href: '#',
+    href: '/meet-the-doctors',
     dropdown: [
-      { label: 'Meet Our Doctors', href: '#' },
-      { label: 'Meet The Staff', href: '#' }
+      { label: 'Meet Our Doctors', href: '/meet-the-doctors' },
     ]
   },
-  { label: 'Services', href: '#', hasDropdown: true },
-  { label: 'Testimonials', href: '#' },
-  { label: 'Contact', href: '#' },
-  { label: 'Blog', href: '#', hasDropdown: true },
+  { label: 'Services', href: `/${services[0]?.slug ?? ''}`, dropdown: serviceDropdown },
+  { label: 'Testimonials', href: '/testimonials' },
+  { label: 'Contact', href: '/contact' },
+  { label: 'Blog', href: `/${blogPages[0]?.slug ?? ''}`, dropdown: blogDropdown },
 ];
 
 const Navbar = () => {
@@ -61,23 +81,23 @@ const Navbar = () => {
                 key={item.label} 
                 className="relative group"
                 onMouseEnter={() => {
-                  if (item.dropdown || item.hasDropdown) setActiveDropdown(item.label);
+                  if (item.dropdown) setActiveDropdown(item.label);
                 }}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <a
+                <Link
                   href={item.href} 
                   className="flex items-center hover:text-[#213666] transition-colors py-4 md:py-8 "
                 >
                   {item.label}
-                  {(item.dropdown || item.hasDropdown) && (
+                  {item.dropdown && (
                     <FaChevronDown size={12} className="ml-1" />
                   )}
-                </a>
+                </Link>
 
                 {/* Dropdown Menu */}
                 {item.dropdown && activeDropdown === item.label && (
-                  <div className="absolute top-full left-0 w-48 bg-white shadow-xl rounded-b-md border-t-2 border-[#f0f0f0] overflow-hidden">
+                  <div className="absolute top-full left-0 z-20 w-[320px] bg-white shadow-xl rounded-b-md border-t-2 border-[#f0f0f0] overflow-hidden max-h-[420px] overflow-y-auto">
                     {item.dropdown.map((dropItem) => (
                       <Link 
                         key={dropItem.label} 
@@ -163,7 +183,7 @@ const Navbar = () => {
             <nav className="mt-10">
               <ul className="space-y-4">
                 {navItems.map((item) => {
-                  const hasSubmenu = Boolean(item.dropdown || item.hasDropdown);
+                  const hasSubmenu = Boolean(item.dropdown);
                   const isOpen = mobileDropdownOpen === item.label && Boolean(item.dropdown);
 
                   return (
