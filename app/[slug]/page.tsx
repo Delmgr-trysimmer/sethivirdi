@@ -63,14 +63,20 @@ function renderContentBlocks(slug: string, content: ServiceContentBlock[]) {
                 const faqItems: { question: string; answer: string }[] = [];
                 let cursor = index + 1;
 
-                while (
-                    cursor + 1 < content.length &&
-                    content[cursor]?.type === "paragraph" &&
-                    content[cursor + 1]?.type === "paragraph"
-                ) {
+                while (cursor + 1 < content.length) {
+                    const questionBlock = content[cursor];
+                    const answerBlock = content[cursor + 1];
+
+                    if (
+                        questionBlock?.type !== "paragraph" ||
+                        answerBlock?.type !== "paragraph"
+                    ) {
+                        break;
+                    }
+
                     faqItems.push({
-                        question: content[cursor].text,
-                        answer: content[cursor + 1].text,
+                        question: questionBlock.text,
+                        answer: answerBlock.text,
                     });
                     cursor += 2;
                 }
