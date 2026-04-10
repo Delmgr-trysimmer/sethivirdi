@@ -23,7 +23,7 @@ const services = [
 ]
 
 
-const OurServcies = () => {
+const OurServices = () => {
     return (
         <section className="w-full bg-[#e9f7ff] pb-10 mt-12">
             <div className="px-4 sm:px-6  text-center py-12">
@@ -68,4 +68,4 @@ const OurServcies = () => {
     )
 }
 
-export default OurServcies
+export default OurServices

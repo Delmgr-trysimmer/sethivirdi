@@ -2,10 +2,13 @@ import React from 'react'
 import { FaRegClock } from "react-icons/fa";
 
 const openingHours = [
-    { day: "Monday - Thursday", time: "08.00 AM - 20.00 PM" },
-    { day: "Friday", time: "08.00 AM - 17.00 PM" },
-    { day: "Saturday", time: "09.00 AM - 17.00 PM" },
-    { day: "Sunday", time: "09.00 AM - 18.00 PM" },
+    { day: "Monday", time: "9.00 AM - 5.00 PM" },
+    { day: "Tuesday", time: "9.00 AM - 6.00 PM" },
+    { day: "Wednesday", time: "9.00 AM - 6.00 PM" },
+    { day: "Thursday", time: "8.00 AM - 5.00 PM" },
+    { day: "Friday", time: "9.00 AM - 2.00 PM" },
+    { day: "Saturday", time: "8.00 AM - 2.00 PM" },
+    { day: "Sunday", time: "Closed" },
 ];
 
 
@@ -18,9 +21,7 @@ const OpeningHours = () => {
             </h2>
 
             <p className="mt-6 text-[18px] text-[#888888] leading-[1.45]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                Contact Sethi Virdi DDS today to experience top-quality dental care in a welcoming and caring environment. Your smile and oral health are our top priorities, and we can’t wait to meet you!
             </p>
 
             <h3 className="mt-7 text-[18px] font-semibold">

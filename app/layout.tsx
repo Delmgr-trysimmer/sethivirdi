@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Poppins } from "next/font/google";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import SiteChrome from "@/components/SiteChrome";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -35,9 +34,7 @@ export default function RootLayout({
       className={`${poppins.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Navbar />
-        {children}
-        <Footer />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );

@@ -6,16 +6,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-
 export const metadata: Metadata = {
-    title: 'Premium Education - Sethi Virdi DDS',
-    description: 'Premium patient education by Sethi Virdi DDS helps you understand dental treatments, oral care tips, and make informed decisions for a healthy smile.',
+    title: "Educational Videos - Sethi Virdi DDS",
+    description: ""
 }
 
 const page = () => {
     return (
         <div>
-            <PageBanner title="Premium Education" breadcrumbItems={["Home", "Premium Education"]} />
+            <PageBanner title='Invisalign Consultations' />
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1290px] mt-16 mb-16 lg:mb-32">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
                     <div className="relative pt-10 pl-8 md:pl-12">
@@ -44,6 +43,20 @@ const page = () => {
                     </div>
                 </div>
             </div>
+
+            <section className="w-full bg-[#e8f4fd] py-12">
+                <div className="mx-auto flex max-w-[900px] flex-col items-center px-4 text-center sm:px-6 lg:px-8">
+                    <p className="text-[18px] font-medium text-[#213666]">
+                        Testimonial
+                    </p>
+                    <h2 className="mt-4 text-[32px] font-semibold leading-[1.15] text-[#111111]">
+                        What Customer Says
+                    </h2>
+                    <p className="mt-4 max-w-[760px] text-[18px] leading-[1.7] text-[#111111] sm:text-[19px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua
+                    </p>
+                </div>
+            </section>
 
             <AppointmentSection />
             <GoogleMap />

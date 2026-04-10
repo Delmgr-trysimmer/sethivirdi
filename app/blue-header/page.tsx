@@ -2,7 +2,7 @@ import CtaSection from "@/components/CtaSection";
 import BlogSection from "@/components/BlogSection";
 import Hero from "@/components/Hero";
 import InsuranceSection from "@/components/InsuranceSection";
-import OurServcies from "@/components/OurServcies";
+import OurServices from "@/components/OurServices";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -65,7 +65,7 @@ const page = () => {
             </div>
             <InsuranceSection />
 
-            <OurServcies />
+            <OurServices />
 
             <section className="w-full bg-white pb-10">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1290px] mt-16">
