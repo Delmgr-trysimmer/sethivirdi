@@ -46,7 +46,7 @@ const page = () => {
             </section>
 
 
-            <OurServices />
+            <OurServices showAll />
 
             <div className='text-base md:text-lg leading-[1.5em] space-y-4 max-w-[1290px] mx-auto pt-20 pb-10'>
                 <p className='font-bold'>Emergency Dental Treatment:</p>

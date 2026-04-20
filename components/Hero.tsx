@@ -18,6 +18,19 @@ const slides = [
         title: (<>We Do Same-Day Crown <br /> Your Smile, Our Priority!</>),
         description: 'Talk to your dentist for tips to keep your teeth cavity-free.',
     },
+    {
+        id: 2,
+        bgImage: '/images/service-2.webp',
+        title: (<>Precision Dentistry for <br /> Lasting Smiles</>),
+        description: 'Annual checkups keep teeth happy and healthy. Schedule yours today!',
+    },
+    {
+        id: 3,
+        bgImage: '/images/service-3.webp',
+        title: (<>Smile Confidently with <br /> Our Dental Expertise</>),
+        description: 'Make a brilliant first impression!',
+    },
+    
 ];
 
 const Hero = () => {

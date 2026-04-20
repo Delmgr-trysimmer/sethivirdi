@@ -43,7 +43,7 @@ const navItems: NavItem[] = [
       { label: 'Meet Our Doctors', href: '/meet-the-doctors' },
     ]
   },
-  { label: 'Services', href: `/${services[0]?.slug ?? ''}`, dropdown: serviceDropdown },
+  { label: 'Services', href: `/dental-services`, dropdown: serviceDropdown },
   { label: 'Testimonials', href: '/testimonials' },
   { label: 'Contact', href: '/contact' },
   { label: 'Blog', href: "/blog", dropdown: [{ label: 'Web Stories', href: "/web-stories" }] },

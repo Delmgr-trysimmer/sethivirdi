@@ -1,29 +1,47 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
+import { formatServiceSlug, services } from '@/lib/services'
 
-const services = [
+const featuredServices = [
     {
         title: 'General Dentistry',
         description:
             'Routine exams, professional cleanings, and preventive care to help keep your smile healthy and strong.',
         image: '/images/Teeth-Cleanings.jpg',
+        slug: 'dental-services',
     },
     {
         title: 'Dental Implants',
         description:
             'Restore missing teeth with durable, natural-looking implant solutions designed for comfort and confidence.',
         image: '/images/Dental-Implants-1.jpg',
+        slug: 'dental-implants',
     },
     {
         title: 'Teeth Whitening',
         description:
             'Brighten your smile with cosmetic whitening treatments that deliver a cleaner, more refreshed appearance.',
         image: '/images/Teeth-Whitening.jpg',
-    },
+        slug: 'teeth-whitening',
+        },
 ]
 
 
-const OurServices = () => {
+type OurServicesProps = {
+    showAll?: boolean;
+};
+
+const OurServices = ({ showAll = false }: OurServicesProps) => {
+    const serviceItems = showAll
+        ? services.map((service) => ({
+            title: formatServiceSlug(service.slug),
+            description: service.meta.description,
+            image: service.coverImage,
+            slug: service.slug,
+        }))
+        : featuredServices;
+
     return (
         <section className="w-full bg-[#e9f7ff] pb-10 mt-12">
             <div className="px-4 sm:px-6  text-center py-12">
@@ -35,8 +53,9 @@ const OurServices = () => {
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1290px] mt-6">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-                    {services.map((service) => (
-                        <div
+                    {serviceItems.map((service) => (
+                        <Link
+                            href={`/${service.slug}`}
                             key={service.title}
                             className="overflow-hidden rounded-2xl border border-[#d9ecf7] bg-white shadow-[0_10px_30px_rgba(18,145,218,0.08)] transition-transform duration-300 hover:-translate-y-1"
                         >
@@ -60,7 +79,7 @@ const OurServices = () => {
                                     Learn More
                                 </button>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

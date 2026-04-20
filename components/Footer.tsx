@@ -58,10 +58,10 @@ const Footer = () => {
                   label: "Meet the doctors",
                   href: "/meet-the-doctors",
                 },
-                {
-                  label: "Meet the staff",
-                  href: "/meet-the-staff",
-                },
+                // {
+                //   label: "Meet the staff",
+                //   href: "/meet-the-staff",
+                // },
                 {
                   label: "Services",
                   href: "/dental-services",
@@ -90,6 +90,7 @@ const Footer = () => {
             <ul className="mt-4 space-y-3 text-[18px]">
               {[
                 { label: "Blog", href: "/author/user" },
+                { label: "Emergency Dentist", href: "/emergency-dentist-milpitas/" },
                 // { label: "Educational Videos", href: "/educational-videos" },
                 // { label: "Dental Specials Success", href: "/dental-specials-success" },
                 // { label: "New Patient Special", href: "/new-patient-special" },
@@ -142,7 +143,7 @@ const Footer = () => {
 
         <div className="mt-12 border-t border-[#c5d8e4] pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-[18px]">
           <p>Best Dental Service by sethivirdidds</p>
-          <p>Copyright &copy;2023 sethivirdidds.com All Rights Reserved.</p>
+          <p>Copyright &copy;2026 sethivirdidds.com All Rights Reserved.</p>
         </div>
       </div>
     </footer>
