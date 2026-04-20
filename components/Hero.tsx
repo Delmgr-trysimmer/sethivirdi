@@ -2,13 +2,14 @@
 
 import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay, EffectFade } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
+import Link from 'next/link';
 
 const slides = [
     {
@@ -57,9 +58,9 @@ const Hero = () => {
                                     <p className=" mb-8">
                                         {slide.description}
                                     </p>
-                                    <button className="bg-[#213666] hover:translate-y-[-10px] text-white font-semibold py-3 px-8 rounded-[30px] transition-all duration-300 underline cursor-pointer">
+                                    <Link href={"/book-appointment"} className="bg-[#213666] hover:translate-y-[-10px] text-white font-semibold py-3 px-8 rounded-[30px] transition-all duration-300 underline cursor-pointer">
                                         Make an Appointment
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

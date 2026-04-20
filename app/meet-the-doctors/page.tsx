@@ -57,7 +57,7 @@ const page = () => {
                             <div className="mx-auto w-full max-w-[320px]">
                                 <div className="relative overflow-hidden rounded-[14px] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.12)]">
                                     <Image
-                                        src="/images/Sethivirdi-doctor-image-scaled.jpg"
+                                        src="/images/doctor_image-scaled.webp"
                                         alt="Dr. Amandeep Virdi"
                                         width={640}
                                         height={900}

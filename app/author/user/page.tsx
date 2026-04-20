@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   description: "Browse all blog posts published by user at Sethi Virdi DDS.",
 };
 
+const POSTS_PER_PAGE = 6;
+
+type AuthorUserPageProps = {
+  searchParams?: Promise<{
+    page?: string | string[];
+  }>;
+};
+
 function getPostTitle(post: (typeof blogPages)[number]) {
   return post.bannerTitle || post.title || post.meta.title.replace(/\s*\|.*$/, "");
 }
@@ -37,7 +45,28 @@ function stripInlineMarkdown(text: string) {
     .trim();
 }
 
-export default function AuthorUserPage() {
+function getPageNumber(pageParam?: string | string[]) {
+  const rawValue = Array.isArray(pageParam) ? pageParam[0] : pageParam;
+  const parsedPage = Number.parseInt(rawValue ?? "1", 10);
+
+  if (!Number.isFinite(parsedPage) || parsedPage < 1) {
+    return 1;
+  }
+
+  return parsedPage;
+}
+
+function getPageHref(pageNumber: number) {
+  return pageNumber <= 1 ? "/author/user" : `/author/user?page=${pageNumber}`;
+}
+
+export default async function AuthorUserPage({ searchParams }: AuthorUserPageProps) {
+  const resolvedSearchParams = await searchParams;
+  const totalPages = Math.max(1, Math.ceil(blogPages.length / POSTS_PER_PAGE));
+  const currentPage = Math.min(getPageNumber(resolvedSearchParams?.page), totalPages);
+  const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+  const paginatedPosts = blogPages.slice(startIndex, startIndex + POSTS_PER_PAGE);
+
   return (
     <main className="bg-white py-14 md:py-20">
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
@@ -46,7 +75,7 @@ export default function AuthorUserPage() {
         </h1>
 
         <div className="mt-10 space-y-10">
-          {blogPages.map((post) => {
+          {paginatedPosts.map((post) => {
             const postTitle = getPostTitle(post);
             const excerpt = stripInlineMarkdown(getPostExcerpt(post));
             const description = post.description
@@ -81,6 +110,59 @@ export default function AuthorUserPage() {
             );
           })}
         </div>
+
+        {totalPages > 1 && (
+          <nav
+            aria-label="Blog pagination"
+            className="mt-12 flex flex-wrap items-center justify-center gap-3"
+          >
+            <Link
+              href={getPageHref(currentPage - 1)}
+              aria-disabled={currentPage === 1}
+              className={`rounded-full border px-5 py-2 text-sm font-semibold transition-colors ${
+                currentPage === 1
+                  ? "pointer-events-none border-[#d7d7d7] text-[#a0a0a0]"
+                  : "border-[#1f8dd6] text-[#1f8dd6] hover:bg-[#1f8dd6] hover:text-white"
+              }`}
+            >
+              Previous
+            </Link>
+
+            <div className="flex flex-wrap items-center justify-center gap-2">
+              {Array.from({ length: totalPages }, (_, index) => {
+                const pageNumber = index + 1;
+                const isActive = pageNumber === currentPage;
+
+                return (
+                  <Link
+                    key={pageNumber}
+                    href={getPageHref(pageNumber)}
+                    aria-current={isActive ? "page" : undefined}
+                    className={`flex h-11 w-11 items-center justify-center rounded-full border text-sm font-semibold transition-colors ${
+                      isActive
+                        ? "border-[#111111] bg-[#111111] text-white"
+                        : "border-[#d7d7d7] text-[#111111] hover:border-[#1f8dd6] hover:text-[#1f8dd6]"
+                    }`}
+                  >
+                    {pageNumber}
+                  </Link>
+                );
+              })}
+            </div>
+
+            <Link
+              href={getPageHref(currentPage + 1)}
+              aria-disabled={currentPage === totalPages}
+              className={`rounded-full border px-5 py-2 text-sm font-semibold transition-colors ${
+                currentPage === totalPages
+                  ? "pointer-events-none border-[#d7d7d7] text-[#a0a0a0]"
+                  : "border-[#1f8dd6] text-[#1f8dd6] hover:bg-[#1f8dd6] hover:text-white"
+              }`}
+            >
+              Next
+            </Link>
+          </nav>
+        )}
       </div>
     </main>
   );

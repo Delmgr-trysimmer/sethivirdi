@@ -47,7 +47,7 @@ const navItems: NavItem[] = [
   { label: 'Services', href: `/${services[0]?.slug ?? ''}`, dropdown: serviceDropdown },
   { label: 'Testimonials', href: '/testimonials' },
   { label: 'Contact', href: '/contact' },
-  { label: 'Blog', href: `/${blogPages[0]?.slug ?? ''}`, dropdown: blogDropdown },
+  { label: 'Blog', href: "/author/user" },
 ];
 
 const Navbar = () => {
@@ -125,10 +125,10 @@ const Navbar = () => {
           {/* Right Section: Social & Phone */}
           <div className="hidden lg:flex items-center space-x-6">
             <div className="flex items-center space-x-3">
-              <Link href="#" className="w-8 h-8 rounded-full bg-[#213666] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
+              <Link href="https://www.facebook.com/sethivirdidds" className="w-8 h-8 rounded-full bg-[#213666] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
                 <FaInstagram size={16} />
               </Link>
-              <Link href="#" className="w-8 h-8 rounded-full bg-[#213666] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
+              <Link href="https://www.instagram.com/sethivirdidds/" className="w-8 h-8 rounded-full bg-[#213666] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
                 <FaFacebookF size={16} />
               </Link>
               {/* Third Icon (Green circle with play-like icon ) */}

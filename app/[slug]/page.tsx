@@ -197,7 +197,7 @@ export default async function Page({ params }: PageProps) {
 
     return (
         <div>
-            <PageBanner title={bannerTitle} breadcrumbItems={["Home", bannerTitle]} />
+            <PageBanner title={bannerTitle} />
 
             {page.layout === "service" ? (
                 <div className="mx-auto max-w-[1140px] px-4 py-10 text-base leading-[1.7em] md:py-16 md:text-lg">

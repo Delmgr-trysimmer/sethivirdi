@@ -88,10 +88,10 @@ const Footer = () => {
             <h3 className="text-[18px] font-semibold">Useful Links</h3>
             <ul className="mt-4 space-y-3 text-[18px]">
               {[
-                { label: "Blog", href: "/blog" },
-                { label: "Educational Videos", href: "/educational-videos" },
-                { label: "Dental Specials Success", href: "/dental-specials-success" },
-                { label: "New Patient Special", href: "/new-patient-special" },
+                { label: "Blog", href: "/author/user" },
+                // { label: "Educational Videos", href: "/educational-videos" },
+                // { label: "Dental Specials Success", href: "/dental-specials-success" },
+                // { label: "New Patient Special", href: "/new-patient-special" },
                 { label: "Testimonials", href: "/testimonials" },
               ].map((item) => (
                 <li key={item.label}>
@@ -123,10 +123,10 @@ const Footer = () => {
             </a>
 
             <div className="mt-5 flex items-center gap-3">
-              <Link href="#" className="w-10 h-10 rounded-full bg-[#213666] text-white flex items-center justify-center">
+              <Link href="https://www.instagram.com/sethivirdidds/" className="w-10 h-10 rounded-full bg-[#213666] text-white flex items-center justify-center">
                 <FaInstagram size={16} />
               </Link>
-              <Link href="#" className="w-10 h-10 rounded-full bg-[#213666] text-white flex items-center justify-center">
+              <Link href="https://www.facebook.com/sethivirdidds" className="w-10 h-10 rounded-full bg-[#213666] text-white flex items-center justify-center">
                 <FaFacebookF size={16} />
               </Link>
               <Link href="#" className="w-10 h-10 rounded-full bg-[#213666] text-white flex items-center justify-center">

@@ -47,7 +47,7 @@ export const blogPages: BlogPage[] = [
         },
         title: "",
         excerpt:
-            "",
+            "One of the therapies for replacing missing teeth is a dental implant. It has become a typical therapeutic option in dentistry for the treatment of whole and partial edentulism. Dental implants have several advantages over standard fixed partial dentures. A dental implant is an alloplastic structure inserted into the oral tissues beneath the mucosa and/or periosteum, as well as within or through the bone, to provide retention and support for either a permanent or removable dental prosthesis.",
         coverImage: "/images/DENTAL-IMPLANT-EVERYTHING-YOU-NEED-TO-KNOW.jpg",
         bannerTitle: "Dental Implant: Everything You Need to Know",
         content: [
@@ -532,7 +532,7 @@ export const blogPages: BlogPage[] = [
             description:
                 "Explore our guide to affordable dental implants-your key to a confident smile without breaking the bank. Your journey to affordable oral health starts here!",
         },
-        title: "Affordable Dental Implants: Long-Term Oral Health Care Guide",
+        title: "",
         description:
             "Are you among the millions of people who have experienced the life-changing benefits of dental implants? If so, it's crucial to understand how to care for them to maintain your oral health for years to come. In this comprehensive guide, Sethi Virdi DDS, a leading expert in dentistry, shares invaluable insights on dental implant care.",
         excerpt:
@@ -574,12 +574,7 @@ export const blogPages: BlogPage[] = [
                     "Dietary considerations: Consume a balanced diet rich in vitamins and minerals to support the health of your gums and jawbone.",
                 ],
             },
-            {
-                type: "heading",
-                level: 2,
-                text: "FAQs",
-            },
-            {
+           {
                 type: "heading",
                 level: 2,
                 text: "Conclusion",
