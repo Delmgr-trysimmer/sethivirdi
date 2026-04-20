@@ -29,6 +29,10 @@ type FormState = {
   message: string;
 };
 
+type ContactFormProps = {
+  formType?: "contact" | "appointment";
+};
+
 const initialFormState: FormState = {
   name: "",
   email: "",
@@ -38,7 +42,7 @@ const initialFormState: FormState = {
 
 const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
-export default function ContactForm() {
+export default function ContactForm({ formType = "contact" }: ContactFormProps) {
   const router = useRouter();
   const recaptchaRef = useRef<HTMLDivElement | null>(null);
   const widgetIdRef = useRef<number | null>(null);
@@ -99,6 +103,7 @@ export default function ContactForm() {
         },
         body: JSON.stringify({
           ...formState,
+          formType,
           recaptchaToken: captchaToken,
         }),
       });

@@ -6,6 +6,7 @@ type ContactPayload = {
   email?: string;
   phone?: string;
   message?: string;
+  formType?: "contact" | "appointment";
   recaptchaToken?: string;
 };
 
@@ -63,6 +64,7 @@ export async function POST(request: Request) {
     const phone = body.phone?.trim() ?? "";
     const message = body.message?.trim() ?? "";
     const recaptchaToken = body.recaptchaToken?.trim() ?? "";
+    const formType = body.formType === "appointment" ? "appointment" : "contact";
 
     if (!name || !email || !phone || !message || !recaptchaToken) {
       return NextResponse.json(
@@ -80,8 +82,20 @@ export async function POST(request: Request) {
       );
     }
 
-    const toEmail = getRequiredEnv("APPOINTMENT_TO_EMAIL");
-    const ccEmail = process.env.APPOINTMENT_CC_EMAIL?.trim();
+    const emailConfig =
+      formType === "appointment"
+        ? {
+            to: ["megnasemail@gmail.com", "sethivirdidds@gmail.com"],
+            cc: ["info@socialhi5.com"],
+            subject: "New Appointment from SethiVirdiDDS",
+            heading: "New Appointment Form Submission",
+          }
+        : {
+            to: ["sethivirdidds@gmail.com"],
+            cc: ["info@socialhi5.com"],
+            subject: "New Appointment from sethivirdidds - Contact Us",
+            heading: "New Contact Form Submission",
+          };
 
     await sendMail(
       {
@@ -92,14 +106,14 @@ export async function POST(request: Request) {
         from: getRequiredEnv("SMTP_FROM").replace(/^"|"$/g, "").trim(),
       },
       {
-        to: [toEmail],
-        cc: ccEmail ? [ccEmail] : [],
+        to: emailConfig.to,
+        cc: emailConfig.cc,
         replyTo: email,
-        subject: `New contact form submission from ${name}`,
+        subject: emailConfig.subject,
         text: `Name: ${name}\nEmail: ${email}\nTelephone: ${phone}\nMessage:\n${message}`,
         html: `
           <div style="font-family: Arial, sans-serif; font-size: 16px; line-height: 1.6;">
-            <h2 style="margin-bottom: 16px;">New Contact Form Submission</h2>
+            <h2 style="margin-bottom: 16px;">${emailConfig.heading}</h2>
             <p><strong>Name:</strong> ${escapeHtml(name)}</p>
             <p><strong>Email:</strong> ${escapeHtml(email)}</p>
             <p><strong>Telephone:</strong> ${escapeHtml(phone)}</p>
