@@ -4,6 +4,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Thankyou - Appointment - Sethi Virdi DDS",
   description: "Thanks for contacting us! We will be in touch with you shortly",
+  alternates: {
+    canonical: "/thankyou-appointment/",
+  },
 };
 
 export default function ThankYouPage() {

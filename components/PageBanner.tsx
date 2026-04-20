@@ -31,12 +31,12 @@ const PageBanner = ({
               {title}
             </h1>
 
-            {breadcrumbItems && breadcrumbItems.length > 0 && <div className="text-white text-[16px] md:text-[18px] flex items-center gap-2">
+            {/* {breadcrumbItems && breadcrumbItems.length > 0 && <div className="text-white text-[16px] md:text-[18px] flex items-center gap-2">
               <span>{breadcrumbItems[0]}</span>
               <FaChevronRight size={12} />
               <span>{breadcrumbItems[1]}</span>
             </div>
-            }
+            } */}
           </div>
         </div>
       </div>

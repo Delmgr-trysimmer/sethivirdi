@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sethivirdidds.com/"),
   title: "Dentist in Milpitas, CA - Cosmetic Dentistry 95035",
   description: "Dentist in Milpitas offering expert cosmetic dentistry, dental implants, emergency dental care, and professional teeth whitening. Visit Sethi Virdi DDS today.",
   robots: {

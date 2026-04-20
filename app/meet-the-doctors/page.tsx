@@ -8,6 +8,9 @@ import React from 'react'
 export const metadata: Metadata = {
     title: "Meet The Doctors | Sethi Virdi DDS",
     description: "Meet the doctors at Sethi Virdi DDS. Trusted experts dedicated to your dental well-being. Experience personalized care for a healthier, happier smile!",
+    alternates: {
+        canonical: "/meet-the-doctors/",
+    },
 }
 
 const page = () => {

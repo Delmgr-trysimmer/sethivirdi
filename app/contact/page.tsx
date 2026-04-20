@@ -1,6 +1,7 @@
 import ContactForm from '@/components/ContactForm'
 import ContactIntroCard from '@/components/ContactIntroCard'
 import GoogleMap from '@/components/GoogleMap'
+import OpeningHours from '@/components/OpeningHours'
 import PageBanner from '@/components/PageBanner'
 import { Metadata } from 'next'
 import Image from 'next/image'
@@ -10,7 +11,10 @@ import React from 'react'
 
 export const metadata: Metadata = {
     title: "Contact Us for Dental Care Milpitas, CA, Sethi Virdi DDS",
-    description: "Contact us for premier dental care in Milpitas, CA. Trust Sethi Virdi DDS for comprehensive and reliable dental services. Get in touch today!"
+    description: "Contact us for premier dental care in Milpitas, CA. Trust Sethi Virdi DDS for comprehensive and reliable dental services. Get in touch today!",
+    alternates: {
+        canonical: "/contact/",
+    },
 }
 
 const page = () => {
@@ -28,6 +32,7 @@ const page = () => {
                     <div>
                         <h2 className='mb-4 text-[28px] font-semibold tracking-tight text-[#0d0d0d] md:text-[32px]'>Get In Touch</h2>
                         <p className='text-[18px] leading-[1.5em] text-black'>Contact Sethi Virdi DDS today to experience top-quality dental care in a welcoming and caring environment. Your smile and oral health are our top priorities, and we can’t wait to meet you!</p>
+                        <OpeningHours />
                     </div>
                     <ContactForm />
                 </div>

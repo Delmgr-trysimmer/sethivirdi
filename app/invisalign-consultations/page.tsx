@@ -8,7 +8,10 @@ import React from 'react'
 
 export const metadata: Metadata = {
     title: "Educational Videos - Sethi Virdi DDS",
-    description: ""
+    description: "",
+    alternates: {
+        canonical: "/invisalign-consultations/",
+    },
 }
 
 const page = () => {

@@ -7,6 +7,9 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
     title: "Book Appointment for Dental Care Milpitas, CA, Sethi Virdi DDS",
     description: "Book Appointment for premier dental care in Milpitas, CA. Trust Sethi Virdi DDS for comprehensive and reliable dental services. Get in touch today!",
+    alternates: {
+        canonical: "/book-appointment/",
+    },
 }
 
 const page = () => {

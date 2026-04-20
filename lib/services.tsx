@@ -842,7 +842,11 @@ export const services: Service[] = [
                 type: "paragraph",
                 text: "Children are active, and dental injuries can happen unexpectedly. If your child chips a tooth, loosens one, or experiences trauma, contact our dental office in Milpitas right away. Prompt evaluation helps protect developing teeth and reduce complications.",
             },
-          
+            {
+                type: "heading",
+                level: 2,
+                text: "FAQ Pediatric Dentistry Sethi Virdi DDS",
+            },
             {
                 type: "heading",
                 level: 5,

@@ -9,10 +9,9 @@ import {
   FaChevronDown,
   FaInstagram,
   FaFacebookF,
-  FaPlay,
-  FaStar,
   FaBars,
   FaTimes,
+  FaGoogle,
 } from 'react-icons/fa';
 
 type NavItem = {
@@ -47,7 +46,7 @@ const navItems: NavItem[] = [
   { label: 'Services', href: `/${services[0]?.slug ?? ''}`, dropdown: serviceDropdown },
   { label: 'Testimonials', href: '/testimonials' },
   { label: 'Contact', href: '/contact' },
-  { label: 'Blog', href: "/author/user" },
+  { label: 'Blog', href: "/blog", dropdown: [{ label: 'Web Stories', href: "/web-stories" }] },
 ];
 
 const Navbar = () => {
@@ -132,13 +131,13 @@ const Navbar = () => {
                 <FaFacebookF size={16} />
               </Link>
               {/* Third Icon (Green circle with play-like icon ) */}
-              <Link href="#" className="w-8 h-8 rounded-full bg-[#213666] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
-                <FaPlay size={14} className="ml-0.5" />
+              <Link href="https://share.google/AJRJmm543egArcrnw" className="w-8 h-8 rounded-full bg-[#213666] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
+                <FaGoogle size={14} className="ml-0.5" />
               </Link>
               {/* Fourth Icon (Yelp-like or Star) */}
-              <Link href="#" className="w-8 h-8 rounded-full bg-[#213666] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
+              {/* <Link href="#" className="w-8 h-8 rounded-full bg-[#213666] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
                 <FaStar size={16} />
-              </Link>
+              </Link> */}
             </div>
             
             <a href="tel:+14082631255" className="text-[26px] font-extrabold text-[#213666] tracking-tight">

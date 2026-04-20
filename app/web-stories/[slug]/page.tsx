@@ -4,7 +4,10 @@ import WebStoryViewer from "@/components/WebStoryViewer";
 
 export const metadata: Metadata = {
   title: "Dental Care Service Milpitas CA | Sethi Virdi DDS",
-  description: "Dental Care Service in Milpitas, CA Sethi Virdi DDS offers top-quality dental care. Experience excellence in oral health with our dedicated team."
+  description: "Dental Care Service in Milpitas, CA Sethi Virdi DDS offers top-quality dental care. Experience excellence in oral health with our dedicated team.",
+  alternates: {
+    canonical: "/web-stories/dental-care-service-milpitas-ca/",
+  },
 }
 
 type StoryPageProps = {

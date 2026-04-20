@@ -10,6 +10,9 @@ import { FaCalendarAlt } from 'react-icons/fa'
 export const metadata: Metadata = {
     title: "Dental patient testimonials In Milpitas, CA Sethi Virdi DDS",
     description: "Explore Sethi Virdi DDS patient testimonials in Milpitas, CA. Real stories of satisfied smiles. Choose trusted dental care, Sethi Virdi DDS.",
+    alternates: {
+        canonical: "/testimonials/",
+    },
 }
 
 const page = () => {

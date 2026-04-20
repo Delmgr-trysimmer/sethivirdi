@@ -10,6 +10,7 @@ import {
 } from "@/lib/contentPages";
 import { parseInlineBlogText } from "@/lib/parseInlineText";
 import type { ServiceContentBlock } from "@/lib/services";
+import GoogleMap from "@/components/GoogleMap";
 
 type PageProps = {
     params: Promise<{
@@ -31,10 +32,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         return {
             title: "Page | Sethi Virdi DDS",
             description: "Learn more about our dental services and dental blog articles.",
+            alternates: {
+                canonical: "/",
+            },
         };
     }
 
-    return page.meta;
+    return {
+        ...page.meta,
+        alternates: {
+            canonical: `/${page.slug}/`,
+        },
+    };
 }
 
 function renderContentBlocks(slug: string, content: ServiceContentBlock[]) {
@@ -259,6 +268,8 @@ export default async function Page({ params }: PageProps) {
                     </div>
                 </article>
             )}
+
+            {page.layout === "service" && <GoogleMap />}
         </div>
     );
 }

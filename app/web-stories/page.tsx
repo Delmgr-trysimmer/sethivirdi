@@ -5,6 +5,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
     title: "Milpitas Dentist Web Stories - Sethi Virdi DDS",
     description: "Explore Milpitas dentist Sethi Virdi DDS's web stories. Discover patient smiles, dental care tips, and real transformations in our inspiring story highlights.",
+    alternates: {
+        canonical: "/web-stories/",
+    },
 };
 
 const stories = [

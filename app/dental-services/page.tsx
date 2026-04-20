@@ -8,7 +8,10 @@ import React from 'react'
 
 export const metadata: Metadata = {
     title: "Sethi Virdi DDS | Dental Services In Milpitas, CA",
-    description: "Sethi Virdi DDS offers top-notch dental services in Milpitas, CA. Experience excellence in oral care with our skilled team. Your trusted smile partner."
+    description: "Sethi Virdi DDS offers top-notch dental services in Milpitas, CA. Experience excellence in oral care with our skilled team. Your trusted smile partner.",
+    alternates: {
+        canonical: "/dental-services/",
+    },
 }
 
 const page = () => {

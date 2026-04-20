@@ -6,6 +6,13 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import OurServices from "@/components/OurServices";
 import BlogSection from "@/components/BlogSection";
 import WhyChoose from "@/components/WhyChoose";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (

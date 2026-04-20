@@ -10,6 +10,7 @@ import {
   FaPlay,
   FaYelp,
   FaChevronRight,
+  FaGoogle,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -129,12 +130,12 @@ const Footer = () => {
               <Link href="https://www.facebook.com/sethivirdidds" className="w-10 h-10 rounded-full bg-[#213666] text-white flex items-center justify-center">
                 <FaFacebookF size={16} />
               </Link>
-              <Link href="#" className="w-10 h-10 rounded-full bg-[#213666] text-white flex items-center justify-center">
-                <FaPlay size={14} className="ml-0.5" />
+              <Link href="https://share.google/AJRJmm543egArcrnw" className="w-10 h-10 rounded-full bg-[#213666] text-white flex items-center justify-center">
+                <FaGoogle size={14} className="ml-0.5" />
               </Link>
-              <Link href="#" className="w-10 h-10 rounded-full bg-[#213666] text-white flex items-center justify-center">
+              {/* <Link href="#" className="w-10 h-10 rounded-full bg-[#213666] text-white flex items-center justify-center">
                 <FaYelp size={16} />
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

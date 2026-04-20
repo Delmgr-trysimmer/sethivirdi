@@ -9,6 +9,9 @@ import React from "react";
 export const metadata: Metadata = {
     title: "New Patient Special - Sethi Virdi DDS",
     description: "",
+    alternates: {
+        canonical: "/new-patient-special/",
+    },
 }
 
 const page = () => {

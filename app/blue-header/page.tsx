@@ -12,6 +12,9 @@ import React from "react";
 export const metadata: Metadata = {
     title: "Blue header - Sethi Virdi DDS",
     description: "",
+    alternates: {
+        canonical: "/blue-header/",
+    },
 }
 
 const page = () => {
