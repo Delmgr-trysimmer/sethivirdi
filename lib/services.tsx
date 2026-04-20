@@ -848,40 +848,25 @@ export const services: Service[] = [
                 text: "FAQ Pediatric Dentistry Sethi Virdi DDS",
             },
             {
-                type: "heading",
-                level: 5,
-                text: "1. Does my child really need to see a dentist if baby teeth fall out anyway?",
-            },
-            {
-                type: "paragraph",
-                text: "Yes. Baby teeth help with speech, chewing, and guiding permanent teeth into proper position.",
-            },
-            {
-                type: "heading",
-                level: 5,
-                text: "2. What's the right way for my child to brush?",
-            },
-            {
-                type: "paragraph",
-                text: "The 2-2-2 approach is helpful: brush twice a day for two minutes and visit the dentist twice per year. Parents should assist with brushing until around age seven or eight.",
-            },
-            {
-                type: "heading",
-                level: 5,
-                text: "3. My child is seven - should I think about orthodontics?",
-            },
-            {
-                type: "paragraph",
-                text: "Age seven is typically a good time to evaluate bite development. Early monitoring does not always mean treatment, but it allows for informed planning.",
-            },
-            {
-                type: "heading",
-                level: 5,
-                text: "4. Can a general dentist treat children?",
-            },
-            {
-                type: "paragraph",
-                text: "A general dentist can treat children, but pediatric dentistry includes additional training focused on child development and behavior management.",
+                type: "faq",
+                items: [
+                    {
+                        question: "Does my child really need to see a dentist if baby teeth fall out anyway?",
+                        answer: "Yes. Baby teeth help with speech, chewing, and guiding permanent teeth into proper position.",
+                    },
+                    {
+                        question: "What's the right way for my child to brush?",
+                        answer: "The 2-2-2 approach is helpful: brush twice a day for two minutes and visit the dentist twice per year. Parents should assist with brushing until around age seven or eight.",
+                    },
+                    {
+                        question: "My child is seven - should I think about orthodontics?",
+                        answer: "Age seven is typically a good time to evaluate bite development. Early monitoring does not always mean treatment, but it allows for informed planning.",
+                    },
+                    {
+                        question: "Can a general dentist treat children?",
+                        answer: "A general dentist can treat children, but pediatric dentistry includes additional training focused on child development and behavior management.",
+                    },
+                ],
             },
             {
                 type: "heading",
