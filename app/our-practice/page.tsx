@@ -17,11 +17,11 @@ import PageBanner from "@/components/PageBanner";
 const page = () => {
     const style = "text-[18px] text-black leading-[1.5em]";
     const galleryImages = [
-        "/images/megna-319-scaled-1.jpg",
+        "/images/megna-313-scaled.jpg",
         "/images/professional-female-dentist-at-work-9SDJLQ4-e1616852692593.jpg",
         "/images/Service.jpg",
-        "/images/megna-319-scaled-1.jpg",
-        "/images/professional-female-dentist-at-work-9SDJLQ4-e1616852692593.jpg",
+        "/images/smiling-female-dentist.jpg",
+        "/images/smiling-dentists-standing-in-dental-clinic.jpg"
     ];
 
     return (
