@@ -15,7 +15,7 @@ const openingHours = [
 const OpeningHours = () => {
     return (
         <div><div className="text-[#111111]">
-            <h5 className="text-[18px] text-[#213666]">Book Now</h5>
+            {/* <h5 className="text-[18px] text-[#213666]">Book Now</h5> */}
             <h2 className="mt-2 text-[32px] text-[#0d0d0d] font-semibold leading-tight">
                 Make An Appointment
             </h2>

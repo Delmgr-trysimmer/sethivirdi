@@ -90,7 +90,7 @@ const Footer = () => {
             <ul className="mt-4 space-y-3 text-[18px]">
               {[
                 { label: "Blog", href: "/author/user" },
-                { label: "Emergency Dentist", href: "/emergency-dentist-milpitas/" },
+                // { label: "Emergency Dentist", href: "/emergency-dentist-milpitas/" },
                 // { label: "Educational Videos", href: "/educational-videos" },
                 // { label: "Dental Specials Success", href: "/dental-specials-success" },
                 // { label: "New Patient Special", href: "/new-patient-special" },

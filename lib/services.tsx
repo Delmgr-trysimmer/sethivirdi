@@ -1176,7 +1176,8 @@ export const services: Service[] = [
         slug: "removable-dentures",
         meta: {
             title: "Removable Dentures - Sethi Virdi DDS",
-            description: "",
+            description:
+                "Restore your smile with custom removable dentures in Milpitas, CA. Sethi Virdi DDS offers complete, partial, and implant-supported options for comfort and a natural look. Call (408) 263-1255.",
         },
         title: "Restore Your Smile with Dentures in Milpitas",
         description:

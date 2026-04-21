@@ -9,6 +9,13 @@ function isInternalLink(href: string) {
     return href.startsWith("/") || href.startsWith("#");
 }
 
+/** Plain text for previews (e.g. blog listing); use `parseInlineBlogText` on full article pages. */
+export function stripInlineMarkdown(text: string): string {
+    return text
+        .replace(/\*\*([^*]+)\*\*/g, "$1")
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
+}
+
 export function parseInlineBlogText(text: string): ReactNode[] {
     const nodes: ReactNode[] = [];
     let cursor = 0;
