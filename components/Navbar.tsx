@@ -87,6 +87,7 @@ const Navbar = () => {
                 <Link
                   href={item.href} 
                   className="flex items-center hover:text-[#213666] transition-colors py-4 md:py-8 "
+                  onClick={() => setActiveDropdown(null)}
                 >
                   {item.label}
                   {item.dropdown && (
@@ -102,6 +103,7 @@ const Navbar = () => {
                         key={dropItem.label} 
                         href={dropItem.href}
                         className="block px-4 py-3 text-sm text-[#333] hover:text-[#2b4c7e] hover:bg-gray-50 transition-colors font-semibold border-b border-gray-100 last:border-0"
+                        onClick={() => setActiveDropdown(null)}
                       >
                         {dropItem.label}
                       </Link>

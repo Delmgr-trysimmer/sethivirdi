@@ -20,7 +20,7 @@ const OpeningHours = () => {
                 Make An Appointment
             </h2>
 
-            <p className="mt-6 text-[18px] text-[#888888] leading-[1.45]">
+            <p className="mt-6 text-[18px] leading-[1.45]">
                 Contact Sethi Virdi DDS today to experience top-quality dental care in a welcoming and caring environment. Your smile and oral health are our top priorities, and we can’t wait to meet you!
             </p>
 

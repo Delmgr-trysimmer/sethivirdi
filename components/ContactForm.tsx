@@ -121,7 +121,7 @@ export default function ContactForm({ formType = "contact" }: ContactFormProps) 
         window.grecaptcha.reset(widgetIdRef.current);
       }
 
-      router.push("/thankyou");
+      router.push(formType === "appointment" ? "/thankyou-appointment" : "/thankyou");
     } catch (error) {
       setStatusMessage(
         error instanceof Error

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaCalendarAlt } from "react-icons/fa";
+import Link from "next/link";
 
 const WelcomeSection = () => {
   return (
@@ -24,12 +25,12 @@ const WelcomeSection = () => {
             </div>
 
             <div className="flex justify-start w-full md:w-auto md:ml-16 mb-10">
-              <button className="bg-[#213666] hover:bg-[#152e53] text-[15px] text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 flex items-center justify-center gap-2 shadow-md">
+              <Link href="/book-appointment" className="bg-[#213666] hover:bg-[#152e53] text-[15px] text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 flex items-center justify-center gap-2 shadow-md">
                 <FaCalendarAlt size={16} className="mb-[2px]" />
                 <span className="underline decoration-1 underline-offset-2">
                   Schedule an Appointment Today
                 </span>
-              </button>
+              </Link>
             </div>
 
             <div className="text-[15px] md:text-[16px] leading-relaxed text-[#0d0d0d] space-y-6 max-w-[95%]">
