@@ -89,7 +89,7 @@ const Footer = () => {
             <h3 className="text-[18px] font-semibold">Useful Links</h3>
             <ul className="mt-4 space-y-3 text-[18px]">
               {[
-                { label: "Blog", href: "/author/user" },
+                { label: "Blog", href: "/blog" },
                 // { label: "Emergency Dentist", href: "/emergency-dentist-milpitas/" },
                 // { label: "Educational Videos", href: "/educational-videos" },
                 // { label: "Dental Specials Success", href: "/dental-specials-success" },
