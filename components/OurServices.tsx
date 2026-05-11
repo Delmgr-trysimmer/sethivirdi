@@ -54,7 +54,7 @@ const OurServices = ({ showAll = false }: OurServicesProps) => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1290px] mt-6">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
                     {serviceItems.map((service) => {
-                        console.log(service);
+                        // console.log(service);
                         return (
                             <Link
                                 href={`/${service.slug}`}

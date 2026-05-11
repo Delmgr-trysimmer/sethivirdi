@@ -158,7 +158,7 @@ export const services: Service[] = [
             description:
                 "Budget-Friendly Dental Bonding in Milpitas | Sethi Virdi DDS – Achieve a Radiant Smile with Affordable and Expert Bonding Services!",
         },
-        title: "Discover the benefits of dental bonding in Milpitas.",
+        title: "Dental Bonding in Milpitas, CA for a Natural, Beautiful Smile",
         description:
             "Are you looking to enhance the beauty of your smile without extensive treatments? Dental bonding could be the perfect solution for you. At Sethi Virdi DDS, we offer dental bonding, a conservative and effective cosmetic treatment that can improve the appearance of your teeth in just one visit.",
         coverImage: "/images/dental-bonding-1.webp",
@@ -320,7 +320,7 @@ export const services: Service[] = [
             description:
                 "Restore your smile with natural-looking dental implants in Milpitas, 95035. Dr Meghna Sethi & Dr Amandeep Virdi offer expert implant dentistry.",
         },
-        title: "Expert Implant Dentistry in Milpitas - Sethi Virdi DDS",
+        title: "Dental Implants in Milpitas, CA for a Permanent, Natural-Looking Smile",
         description:
             "If you are looking for a trusted and experienced implant dentistry provider in Milpitas, look no further than Sethi Virdi DDS. Our skilled dental team is dedicated to delivering top-quality dental implant services, helping you regain the functionality and appearance of your natural teeth.",
         coverImage: "/images/Dental-Implants-1.jpg",
@@ -397,7 +397,7 @@ export const services: Service[] = [
             description:
                 "Dental Fillings in Milpitas, offered by Sethi Virdi, DDS, provide strong, natural-looking solutions. Trusted teeth fillings in 95035 for lasting comfort and oral health.",
         },
-        title: "Restore your healthy, attractive smile with dental fillings in Milpitas",
+        title: "Dental Fillings in Milpitas to Restore Your Healthy, Natural Smile",
         description:
             "At Sethi Virdi DDS in Milpitas, we understand the importance of addressing tooth decay early to prevent more extensive dental issues. When plaque bacteria produce acids that erode tooth enamel, cavities can form and compromise your tooth's structure. Our experienced dentists offer dental fillings as a conservative and effective treatment to restore your tooth's function and appearance, saving you from the need for more invasive procedures like crowns, root canals, or extractions.",
         coverImage: "/images/Dental-Fillings.jpg",
@@ -455,7 +455,7 @@ export const services: Service[] = [
             description:
                 "Enhance your smile with Traditional Dentures at Sethi Virdi DDS in Milpitas. Expert dental care for a confident, natural-looking result.",
         },
-        title: "Welcome to the dental practice of Sethi Virdi DDS, in Milpitas!",
+        title: "Custom Dentures in Milpitas, CA for a Natural-Looking Smile",
         heading: "Discover the freedom of Snap-On-Overdentures.",
         description:
             " Are you tired of dealing with loose or uncomfortable dentures? At Sethi Virdi DDS, we understand the challenges that traditional dentures can pose. That’s why we offer a modern solution: Snap-On-Overdentures.",
@@ -597,7 +597,7 @@ export const services: Service[] = [
             description:
                 "Comprehensive Oral Cancer Screenings in Milpitas, CA | Sethi Virdi DDS – Prioritize Your Oral Health with Expert Screening Services for Peace of Mind.",
         },
-        title: "Comprehensive oral cancer screenings in Milpitas, CA - Sethi Virdi DDS",
+        title: "Oral Cancer Screenings in Milpitas, CA for Early Detection and Peace of Mind",
         description:
             "Are you concerned about oral cancer and the importance of early detection? At Sethi Virdi DDS, we offer thorough and life-saving oral cancer screenings in Milpitas, CA. Our experienced dentists are committed to your well-being and use advanced screening techniques to identify potential signs of oral cancer, ensuring your oral health remains a top priority.",
         coverImage: "/images/Oral-Cancer-Screenings.jpg",
@@ -890,7 +890,7 @@ export const services: Service[] = [
             description:
                 "Straighten your smile with expert Orthodontics in Milpitas, CA. Book your free consultation today for braces or aligners in 95035-smile confidently!",
         },
-        title: "Expert Orthodontics in Milpitas - Sethi Virdi DDS",
+        title: "Orthodontic Treatment in Milpitas, CA for a Straighter, Healthier Smile",
         description:
             "If you are looking for the best orthodontist in Milpitas to achieve a beautifully aligned smile, your search ends at Sethi Virdi DDS. Our experienced orthodontic team is dedicated to providing top-quality orthodontic care, helping you achieve the straight and confident smile you've always desired.",
         coverImage: "/images/Orthodontics.jpg",
@@ -958,7 +958,7 @@ export const services: Service[] = [
             description:
                 "Combat periodontal disease with expert treatment in Milpitas, CA at Sethi Virdi DDS. Restore your oral health for a confident, vibrant smile.",
         },
-        title: "Effective Periodontal Gum Disease Therapy in Milpitas, CA  - Sethi Virdi DDS",
+        title: "Gum Disease Treatment in Milpitas, CA for Healthier Gums and Stronger Teeth ",
         description:
             "Are you seeking reliable and comprehensive gum disease treatment in Milpitas, CA? Look no further than Sethi Virdi DDS. Our experienced dental team is dedicated to providing top-quality periodontal gum disease therapy to address gum health issues and preserve your overall oral well-being.",
         coverImage: "/images/Gum-Disease-Therapy.jpg",
@@ -1025,7 +1025,7 @@ export const services: Service[] = [
             description:
                 "Enhance Your Smile with Porcelain Veneers in Milpitas | Sethi Virdi DDS – Expert Veneer Dentistry for a Stunning, Natural-Looking Transformation!",
         },
-        title: "Enhance your smile with Porcelain Veneers in Milpitas, CA - Sethi Virdi DDS.",
+        title: "Porcelain Veneers in Milpitas, CA for a Natural-Looking Smile Makeover",
         description:
             "If you're looking for a natural and durable solution to restore your smile and achieve a brighter, more uniform look, porcelain veneers may be the ideal choice for you. At Sethi Virdi DDS, we offer top-quality dental veneers in Milpitas, CA to address various dental concerns and enhance the overall aesthetics of your teeth.",
         coverImage: "/images/Porcelain-Veneers.jpg",
@@ -1114,7 +1114,7 @@ export const services: Service[] = [
             description:
                 "Enhance your smile with professional teeth cleaning in Milpitas, CA. Trust expert care for a brighter, healthier mouth. Call Us Now at (408) 263-1255.",
         },
-        title: "Affordable Dental Cleaning Services in Milpitas, CA - Sethi Virdi DDS",
+        title: "Remove Plaque & Tartar with Expert Teeth Cleaning in Milpitas",
         description:
             "Maintaining a healthy smile starts with regular dental cleanings. If you're looking for professional and affordable teeth cleaning services in Milpitas, look no further than Sethi Virdi DDS. Our experienced dental team is committed to providing top-quality dental care, ensuring your oral health remains at its best.",
         coverImage: "/images/Teeth-Cleanings.jpg",
@@ -1281,7 +1281,7 @@ export const services: Service[] = [
             description:
                 "Root Canal in Milpitas at Sethi Virdi DDS offers gentle, precise root canal treatment in 95035 to relieve tooth pain and restore oral health effectively.",
         },
-        title: "Expert Root Canal Treatment in Milpitas - Sethi Virdi DDS",
+        title: "Root Canal Treatment in Milpitas to Relieve Tooth Pain and Save Your Natural Tooth",
         description:
             "If you are in need of professional and compassionate root canal treatment in Milpitas, look no further than Sethi Virdi DDS. Our skilled dental team includes root canal specialists and experienced dentists dedicated to providing top-quality root canal therapy, ensuring relief from dental pain, and saving damaged teeth.",
         coverImage: "/images/Root-Canal-Treatment.jpg",
@@ -1435,7 +1435,7 @@ export const services: Service[] = [
             description:
                 "Trust Sethi Virdi DDS for skilled wisdom tooth extractions in Milpitas, CA. Experience expert dental care. Schedule your appointment now!",
         },
-        title: "Expert Wisdom Teeth Extractions and Tooth Extractions in Milpitas",
+        title: "Tooth Extractions in Milpitas for Safe, Comfortable Removal of Damaged Teeth",
         description:
             "Are you or your loved ones experiencing discomfort due to problematic wisdom teeth or other dental issues that may require tooth extractions? Look no further than Sethi Virdi DDS for top-quality and gentle dental care in Milpitas. With our experienced team and state-of-the-art facilities, we ensure a stress-free and comfortable teeth extraction procedure to safeguard your oral health.",
         coverImage: "/images/Tooth-Extractions.jpg",
@@ -1512,7 +1512,7 @@ export const services: Service[] = [
             description:
                 "Teeth Whitening in Milpitas by Sethi Virdi DDS offers safe, effective solutions to brighten your smile. Book your cosmetic dental appointment today.",
         },
-        title: "Teeth Whitening in Milpitas - Brighten Your Smile with Professional Care",
+        title: "Professional Teeth Whitening in Milpitas for a Brighter, Whiter Smile in One Visit",
         description:
             "A radiant smile can boost your confidence and make a lasting impression. If you're looking to enhance your smile safely and effectively, our expert teeth whitening in Milpitas services are the perfect solution. At Sethi Virdi DDS, located conveniently in Milpitas, CA, we offer professional teeth whitening in Milpitas designed to deliver stunning results tailored to your needs.",
         coverImage: "/images/Teeth-Whitening.jpg",
